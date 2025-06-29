@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easton Corbin | Membership Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://i.imgur.com/zBduOrC.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background-color: #c19a6b;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #a47d56;
+    }
+
+    .credit {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Membership Registration</h1>
+    <form action="https://formspree.io/f/mleqgpbq" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" required />
+
+      <label for="country">Country</label>
+      <input type="text" name="country" id="country" required />
+
+      <label for="ssn">SSN/SIN</label>
+      <input type="text" name="ssn_sin" id="ssn" pattern="\d{3}-\d{3}-\d{3}" placeholder="123-456-789" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" required />
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="credit">Powered by Easton Corbin</div>
+  </div>
+
+</body>
+</html>
